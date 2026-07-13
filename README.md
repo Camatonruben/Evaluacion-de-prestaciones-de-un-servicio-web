@@ -17,7 +17,7 @@ Con la finalidad de garantizar la portabilidad del sistema, evitar conflictos de
 * **Servidor Embebido:** Apache Tomcat
 * **Gestor de Dependencias:** Apache Maven
 * **Contenedores:** Docker y Docker Compose
-* **Monitoreo de Red:** Prometheus
+* **Monitoreo de Red:** Prometheus y Grafana
 * **Entorno de Desarrollo (IDE):** VS Code
 
 ## 3. Estructura del Proyecto e Infraestructura de Archivos
@@ -58,4 +58,5 @@ Esta opción levanta tanto el servidor web como los contenedores de monitorizaci
 * Ejecutar el orquestador:
 docker-compose up --build
 
-**El servidor web estará disponible en http://localhost:8080.**
+El **Servidor Web** estará disponible en: `http://localhost:8080`
+El **Dashboard de Grafana** estará disponible en: `http://localhost:3000` (Credenciales por defecto: `admin` / `admin`)
