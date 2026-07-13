@@ -56,6 +56,6 @@ Esta opción levanta tanto el servidor web como los contenedores de monitorizaci
 * Abrir una terminal en el directorio raíz del proyecto.
 
 * Ejecutar el orquestador:
-Bash
 docker-compose up --build
+
 **El servidor web estará disponible en http://localhost:8080.**
