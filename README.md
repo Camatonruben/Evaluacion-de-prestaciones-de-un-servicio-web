@@ -41,22 +41,21 @@ proyecto-monitorizacion-red/
 ## 4. Requisitos Previos
 Para compilar y ejecutar este proyecto en un entorno local, es necesario contar con:
 
-Java Development Kit (JDK)
+* Java Development Kit (JDK)
 
-Docker y Docker Compose
+* Docker y Docker Compose
 
-Apache Maven (opcional, se puede usar el wrapper mvnw incluido)
+* Apache Maven (opcional, se puede usar el wrapper mvnw incluido)
 
 ## 5. Instalación y Ejecución
 Opción A: Ejecución completa con Docker (Recomendado)
 Esta opción levanta tanto el servidor web como los contenedores de monitorización de forma orquestada.
 
-Clonar el repositorio.
+* Clonar el repositorio.
 
-Abrir una terminal en el directorio raíz del proyecto.
+* Abrir una terminal en el directorio raíz del proyecto.
 
-Ejecutar el orquestador:
-
+* Ejecutar el orquestador:
 Bash
 docker-compose up --build
-El servidor web estará disponible en http://localhost:8080.
+**El servidor web estará disponible en http://localhost:8080.**
