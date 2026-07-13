@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 5s # Cada cuántos segundos Prometheus le pedirá datos a tu servidor
+
+scrape_configs:
+  - job_name: 'servidor-java'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      # 'host.docker.internal' es el puente para que Docker vea el puerto 8080 de tu laptop
+      - targets: ['host.docker.internal:8080']
