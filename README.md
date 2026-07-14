@@ -56,7 +56,7 @@ Esta opción levanta tanto el servidor web como los contenedores de monitorizaci
 * Abrir una terminal en el directorio raíz del proyecto.
 
 * Ejecutar el orquestador:
-docker-compose up --build
+docker-compose up -d --build
 
 Ejecutar la Aplicación Java
 Utilizamos el wrapper de Maven integrado para evitar instalaciones adicionales. Ejecuta el servicio localmente:
