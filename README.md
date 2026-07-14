@@ -58,5 +58,18 @@ Esta opción levanta tanto el servidor web como los contenedores de monitorizaci
 * Ejecutar el orquestador:
 docker-compose up --build
 
-El **Servidor Web** estará disponible en: `http://localhost:8080`
-El **Dashboard de Grafana** estará disponible en: `http://localhost:3000` (Credenciales por defecto: `admin` / `admin`)
+Ejecutar la Aplicación Java
+Utilizamos el wrapper de Maven integrado para evitar instalaciones adicionales. Ejecuta el servicio localmente:
+
+* En Windows: .\mvnw spring-boot:run
+
+* En Mac / Linux: ./mvnw spring-boot:run
+
+**Enlaces de Acceso**
+Una vez que ambos comandos estén en ejecución, el entorno estará listo. Accede a los siguientes enlaces en tu navegador:
+
+* API Spring Boot: http://localhost:8080
+
+* Métricas en crudo (Prometheus): http://localhost:8080/actuator/prometheus
+
+* Dashboard en Vivo (Grafana): http://localhost:3000
